@@ -1,0 +1,131 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+}
+body{
+  background-color:#ddd;
+}
+#igra {
+  width:90%;
+  height: 440px;
+  background-color:darkgray;
+  margin:40px auto;
+  border-radius: 9px;
+  position:relative;
+  box-shadow: 1px 1px 7px;
+}
+.data {
+    position:absolute;
+    height:360px;
+    width:300px;
+    border-radius: 20px;
+    border:2px solid #bbb;
+    top:40px;
+    left: 40px;
+    padding:20px;
+}
+#cont1 {
+    width: 660px;
+    height:360px;
+    background-color: darkgreen;
+    border: 1px solid #444 ;
+    border-radius: 15px;
+    position:absolute;
+    top:40px;
+    right:20px;
+    margin:auto 20px;
+    box-shadow: 2px 2px 17px;
+}
+#cont {
+  width: 600px;
+  height:300px;
+  background-color: #0a0;
+  border: 1px solid rgb(31, 82, 31);
+  border-radius:3px;
+  position:relative;
+  margin:auto;
+  top:30px;
+}
+.score {
+  position:absolute;
+  height:30px;
+  width:30px;
+  background-color:#0a0;
+  border-radius:px ;
+ }
+ .score:hover {
+   background-color: black;
+ }
+.n1 {
+top:0;
+left:0;
+border-top: 2px solid black ;
+border-left: 2px solid black ;
+}
+.n2 {
+top:0;
+left: 300px;
+border-top: 2px solid black ;
+}
+.n3 {
+top:0;
+right:0;
+border-top: 2px solid black ;
+border-right: 2px solid black ;
+}
+.n4 {
+bottom:0;  
+right:0;    
+border-right: 2px solid black ;
+border-bottom: 2px solid black ;
+}
+.n5 {
+bottom:0;
+left:300px; 
+border-bottom: 2px solid black ;   
+}
+.n6 {
+bottom:0;
+left:0;  
+border-left: 2px solid black;
+border-bottom: 2px solid black;  
+}
+#ball {
+  height:20px;
+  width: 20px;
+  border-radius:15px;
+  box-shadow: 2px 2px 6px;
+  background-image: radial-gradient(circle, white 9%, lightgray 100%);
+  position:absolute;
+  top:140px;
+  left:140px;
+}
+.but {
+  height:40px;
+  width:100px;
+  margin:10px 10px 30px 0;
+  border-radius: 5px;
+}
+#ugao {
+  margin: 15px 0 30px 0;
+
+}
+h1 {
+  position: relative;
+  margin: 20px auto;
+  color: red;
+  left: 100px;
+  font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+#inf {
+  text align: center;
+  margin: 45px 0 0 105px;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+ }
+ #inf:hover {
+   color: white;
+ }
