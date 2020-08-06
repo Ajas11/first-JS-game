@@ -51,8 +51,9 @@ body{
   position:absolute;
   height:30px;
   width:30px;
-  background-color:#0a0;
+  background-color: black;
   border-radius:px ;
+  
  }
  .score:hover {
    background-color: black;
@@ -62,34 +63,40 @@ top:0;
 left:0;
 border-top: 2px solid black ;
 border-left: 2px solid black ;
+border-radius: 0 0 25px 0;
 }
 .n2 {
 top:0;
-left: 300px;
+left: 285px;
 border-top: 2px solid black ;
+border-radius: 0 0 25px 25px;
 }
 .n3 {
 top:0;
 right:0;
 border-top: 2px solid black ;
 border-right: 2px solid black ;
+border-radius: 0 0 0 25px;
 }
 .n4 {
 bottom:0;  
 right:0;    
 border-right: 2px solid black ;
 border-bottom: 2px solid black ;
+border-radius: 25px 0 0 0 ;
 }
 .n5 {
 bottom:0;
-left:300px; 
+left:285px; 
 border-bottom: 2px solid black ;   
+border-radius: 25px 25px 0 0;
 }
 .n6 {
 bottom:0;
 left:0;  
 border-left: 2px solid black;
-border-bottom: 2px solid black;  
+border-bottom: 2px solid black;
+border-radius: 0 25px 0 0 ;  
 }
 #ball {
   height:20px;

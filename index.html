@@ -7,26 +7,7 @@
   <link rel="stylesheet" href="style.css" type="text/css"/>
   <link rel="shortcut icon" href="icon.png">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script type="text/javascript">
-    function pocni() {
-  var elem = document.getElementById("ball");   
-  var pos = 140;
-  var id = setInterval(frame, 5);
-  function frame() {
-    if (pos == 277) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + "px"; 
-      elem.style.left = pos + "px"; 
-    }
-  }
-}
-function zaustavi() {
-  clearInterval(id);
-  document.getElementById("ball").style.top="140 px";
-}
-  </script>
+  <script type="text/javascript" src="script.js" ></script>
 </head>
 <body>
  <div id="igra">
@@ -34,14 +15,14 @@ function zaustavi() {
         <h2>Biliard trening ...  </h2>
         <div class=div1>
          <button onclick="pocni()" class="but1 but">Igraj</button>
-         <button onclick="zaustavi()" class="but2 but">Zaustavi</button>
+         <button onclick="zaustavi()" class="but2 but" id="but2">Zaustavi</button>
         </div>
         <div class=div1>
             <p>Izaberi ugao: </p>
-            <input type="range"  name="ugao" min="0" max="360" id="ugao">
+            <input type="range"  name="ugao" min="-89" max="89" id="ugao">
         </div>
-        <h2>Bodovi:  </h2>
-        <h1>00</h1>
+        <h2 >Bodovi:  </h2>
+        <h1 id="bod">00</h1>
         <p id="inf">Info</p>
      </div>
      <div id="cont1">
@@ -55,15 +36,6 @@ function zaustavi() {
             <div id="ball"></div>
         </div>
      </div>
-<script>
     
-  $(document).ready(function(){
-  $("#inf").click(function() {
-      alert("      --   Ajas JS game  --  Zeforge Academy  --   Prva JS igra  --  Vjezbaj bilijar  --");
-   });
-   
-});
-
-</script>     
 </body>
 </html>
